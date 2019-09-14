@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="Start" Height="450" Width="800" Loaded="Window_Loaded_1">
     <Canvas>
-        
+
+        <Image Name="Image" 
+               Source=""
+               Height="297" 
+               Canvas.Left="207" Canvas.Top="42" Width="367"/>
+        <Label Content=""
+               Name= "VocabLabel"
+               Canvas.Left="287" Canvas.Top="344" Height="49" Width="218"
+               FontSize="30"
+               HorizontalContentAlignment="Center"/>
+        <Button Content="Stop" 
+                Name="TimerButton"
+                Click="TimerButton_Click"
+                Canvas.Left="686" Canvas.Top="344" Width="58" Height="49"
+                FontSize="25"/>
+    
+
     </Canvas>
 </Window>

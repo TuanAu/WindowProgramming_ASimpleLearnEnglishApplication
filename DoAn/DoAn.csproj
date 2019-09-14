@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -100,6 +101,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\image1.jpg" />
+    <Resource Include="images\image10.jpg" />
+    <Resource Include="images\image11.jpg" />
+    <Resource Include="images\image12.jpg" />
+    <Resource Include="images\image13.jpg" />
+    <Resource Include="images\image14.jpg" />
+    <Resource Include="images\image15.jpg" />
+    <Resource Include="images\image16.jpg" />
+    <Resource Include="images\image17.jpg" />
+    <Resource Include="images\image18.jpg" />
+    <Resource Include="images\image19.jpg" />
+    <Resource Include="images\image2.jpg" />
+    <Resource Include="images\image20.jpg" />
+    <Resource Include="images\image3.jpg" />
+    <Resource Include="images\image4.jpg" />
+    <Resource Include="images\image5.jpg" />
+    <Resource Include="images\image6.jpg" />
+    <Resource Include="images\image7.jpg" />
+    <Resource Include="images\image8.jpg" />
+    <Resource Include="images\image9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

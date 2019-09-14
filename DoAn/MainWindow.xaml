@@ -13,7 +13,11 @@
         <Button Name="StartButton" 
                 Click="StartButton_Click" 
                 Content="Start" 
-                Canvas.Left="299" Canvas.Top="173" Width="190" Height="76" 
+                Canvas.Left="299" Canvas.Top="123" Width="190" Height="76" 
+                Background="Lavender" 
+                FontSize="40" 
+                FontFamily="Arial"/>
+        <Button Content="Review" Canvas.Left="299" Canvas.Top="250" Width="190" Height="76"
                 Background="Lavender" 
                 FontSize="40" 
                 FontFamily="Arial"/>
