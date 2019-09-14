@@ -23,14 +23,6 @@ namespace DoAn
         }
 
 
-        /*
-        string[] images = {"image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg",
-        "image6.jpg","image7.jpg","image8.jpg","image9.jpg","image10.jpg",
-        "image11.jpg","image12.jpg","image13.jpg","image14.jpg","image15.jpg",
-        "image16.jpg","image17.jpg","image18.jpg","image19.jpg","image20.jpg"};
-        */
-
-
         // list of images and vocabularies used for showing on window
         List<string> image = new List<string>();
         List<string> vocabulary = new List<string>();
@@ -55,14 +47,23 @@ namespace DoAn
 
             MessageBox.Show("Are you ready?");
         }
-        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        //Get filename from random number
+        //input: number
+        //output: filename
+        private string getFileName(int number)
         {
             const string file = ".jpg";
+            string fileName;
+            fileName = image[number] + file;
+            return fileName;
+        }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
             int Max = image.Count;
             Random rdn = new Random();
             int index = rdn.Next(Max);
-            string fileName = image[index] + file;
-            Debug.WriteLine(fileName);
+            string fileName = getFileName(index);
             Dispatcher.Invoke(() =>
             {
                 var pic = new BitmapImage(new Uri("images/" + fileName, UriKind.Relative));
@@ -86,6 +87,25 @@ namespace DoAn
                 timer.Enabled = true;
                 timer.Start();
             }
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            //stop time when click next button
+            timer.Enabled = false;
+            timer.Stop();
+
+            int Max = image.Count;
+            Random rdn = new Random();
+            int index = rdn.Next(Max);
+            string fileName = getFileName(index);
+            var pic = new BitmapImage(new Uri("images/" + fileName, UriKind.Relative));
+            Image.Source = pic;
+            VocabLabel.Content = $"{vocabulary[index]}";
+
+            //start time when image is loaded
+            timer.Enabled = true;
+            timer.Start();
         }
     }
 }

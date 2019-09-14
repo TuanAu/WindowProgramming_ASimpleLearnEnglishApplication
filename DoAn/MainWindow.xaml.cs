@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-
+using System.Windows.Controls;
 
 namespace DoAn
 {
@@ -19,5 +19,6 @@ namespace DoAn
             Window1 window1 = new Window1();
             window1.Show();
         }
+        
     }
 }

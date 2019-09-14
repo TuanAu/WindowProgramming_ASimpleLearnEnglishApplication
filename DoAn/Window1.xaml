@@ -21,8 +21,15 @@
                 Name="TimerButton"
                 Click="TimerButton_Click"
                 Canvas.Left="686" Canvas.Top="344" Width="58" Height="49"
+                Background="Coral"
                 FontSize="25"/>
-    
+        <Button Content="Next" 
+                Name="NextButton"
+                Click="NextButton_Click"
+                Canvas.Left="686" Canvas.Top="285" Width="58" Height="49"
+                Background="Coral"
+                FontSize="25"/>
+
 
     </Canvas>
 </Window>
