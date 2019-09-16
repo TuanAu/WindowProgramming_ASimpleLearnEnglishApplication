@@ -13,11 +13,18 @@
         <Button Name="StartButton" 
                 Click="StartButton_Click" 
                 Content="Start" 
-                Canvas.Left="301" Canvas.Top="170" Width="190" Height="76" 
+                Canvas.Left="301" Canvas.Top="129" Width="190" Height="76" 
                 Background="Coral" 
                 FontSize="40" 
                 FontFamily="Arial"/>
-      
+        <Button x:Name="ReviewButton" 
+            Click="ReviewButton_Click" 
+            Content="Review" 
+            Canvas.Left="301" Canvas.Top="249" Width="190" Height="76" 
+            Background="Coral" 
+            FontSize="40" 
+            FontFamily="Arial"/>
+
 
     </Canvas>
 </Window>

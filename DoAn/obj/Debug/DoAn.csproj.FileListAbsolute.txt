@@ -32,3 +32,5 @@ C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\DoAn.csproj.GenerateRes
 C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
 C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\DoAn.exe
 C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\DoAn.pdb
+C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\Window2.g.cs
+C:\Users\PV\Documents\GitHub\learnEnglish\DoAn\obj\Debug\Window2.baml
